@@ -58,6 +58,7 @@ namespace MuscleTrainingRecords00
 
         private async void deleteButton(object sender, EventArgs e)
         {
+            /*
             var result = await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
 
 
@@ -71,6 +72,19 @@ namespace MuscleTrainingRecords00
 
                 InitializeComponent();
             }
+            */
+
+            Record n = (Record)(list.SelectedItem);
+            int no = n.M_no;
+           
+            int M_no = no;
+
+            await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
+
+            RecordsModel.DeleteRecords(M_no);
+
+            InitializeComponent();
+
         }
 
        /* async void CustomDeleteButton_CheckedChanged(object sender, bool e)
