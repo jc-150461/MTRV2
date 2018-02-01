@@ -24,6 +24,8 @@ namespace MuscleTrainingRecords00
 
         public DateTime M_date { get; set; } //日付
 
+        
+
 
 
 

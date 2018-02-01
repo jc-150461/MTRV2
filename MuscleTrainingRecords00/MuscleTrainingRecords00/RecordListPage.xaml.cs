@@ -60,9 +60,9 @@ namespace MuscleTrainingRecords00
         {
             var result = await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
 
+
             Record n = (Record)(list.SelectedItem);
             int no = n.M_no;
-
             if (result == true)
             {
                 int M_no = no;
