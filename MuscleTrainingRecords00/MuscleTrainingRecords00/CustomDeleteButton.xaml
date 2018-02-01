@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MuscleTrainingRecords00.CustomDeleteButton">
+    <StackLayout Orientation="Horizontal">
+        <Image x:Name="buttomImage" Source="can24.png"/>
+        <Label x:Name="textNoLabel" IsVisible="False"/>
+        <Label x:Name="textNameLabel" IsVisible="False"/>
+        <Label x:Name="textCountLabel" IsVisible="False"/>
+        <Label x:Name="textUnitLabel" IsVisible="False"/>
+
+    </StackLayout>
+
+    <ContentView.GestureRecognizers>
+        <TapGestureRecognizer Tapped="OnButtonTapped" />
+    </ContentView.GestureRecognizers>
+</ContentView>

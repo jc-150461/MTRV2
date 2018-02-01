@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MuscleTrainingRecords00;assembly=MuscleTrainingRecords00"
              x:Class="MuscleTrainingRecords00.RecordListPage"
+              xmlns:toolkit="clr-namespace:MuscleTrainingRecords00;assembly=MuscleTrainingRecords00"
              Title="記録" >
     
      <ContentPage.BindingContext>
@@ -75,10 +76,12 @@
                                     <Label Text="{Binding M_date}"
                                            Grid.Column="2" Grid.Row="0"
                                            FontAttributes="Bold"/>
-                                    <Button x:Name="btnTest" 
-                                            Image="ic_delete_2x.png" 
-                                            HorizontalOptions="Center"
-                                            Grid.Column="3" Grid.Row="0"/>
+                                
+                                <toolkit:CustomDeleteButton CheckedChanged="CustomDeleteButton_CheckedChanged"
+                                                        Grid.Column="2" Grid.Row="0"
+                                                        HorizontalOptions="End"
+                                                        NoText="{Binding M_no}"
+                                                        NameText="{Binding M_name}"/> >
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

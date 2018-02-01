@@ -55,6 +55,26 @@ namespace MuscleTrainingRecords00
 
         }
 
+        async void CustomDeleteButton_CheckedChanged(object sender, bool e)
+        {
+            string no = ((CustomDeleteButton)sender).NoText;
+            string name = ((CustomDeleteButton)sender).NameText;
+
+            var result = await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
+            if (result == true)
+            {
+                int m_no = int.Parse(no);
+                RecordsModel.DeleteRecords(m_no);
+
+                
+
+                InitializeComponent();
+            }
+
+
+
+        }
+
         /*private async void button_Clicked(object sender, EventArgs e)
         {
             RecordsModel.DeleteRecords();
