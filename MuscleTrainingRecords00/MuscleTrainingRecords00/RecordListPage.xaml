@@ -82,7 +82,7 @@
                                                         HorizontalOptions="End"
                                                         NoText="{Binding M_no}"
                                                         NameText="{Binding M_name}"
-                                                        DateText="{Binding M_date}}"/> >
+                                                      /> >
                                 
                                 
                             </Grid>

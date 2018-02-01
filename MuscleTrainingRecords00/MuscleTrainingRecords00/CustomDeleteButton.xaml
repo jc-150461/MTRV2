@@ -6,7 +6,7 @@
         <Image x:Name="buttomImage" Source="ic_delete_2x.png"/>
         <Label x:Name="textNoLabel" IsVisible="False"/>
         <Label x:Name="textNameLabel" IsVisible="False"/>
-        <Label x:Name="textDateLabel" IsVisible="False"/>
+       
 
 
     </StackLayout>
