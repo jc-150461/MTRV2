@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MuscleTrainingRecords00.CustomDeleteButton">
     <StackLayout Orientation="Horizontal">
-        <Image x:Name="buttomImage" Source="can24.png"/>
+        <Image x:Name="buttomImage" Source="ic_delete_2x.png"/>
         <Label x:Name="textNoLabel" IsVisible="False"/>
         <Label x:Name="textNameLabel" IsVisible="False"/>
         <Label x:Name="textCountLabel" IsVisible="False"/>

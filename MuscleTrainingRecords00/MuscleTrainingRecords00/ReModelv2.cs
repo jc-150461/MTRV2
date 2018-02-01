@@ -22,6 +22,7 @@ namespace MuscleTrainingRecords00
                 var query = RecordsModelv2.SelectRe(key);
                 Records = new ObservableCollection<Record>();
 
+
                 foreach (var record in query)//拡張forループ
                 {
                     Record r = new Record
