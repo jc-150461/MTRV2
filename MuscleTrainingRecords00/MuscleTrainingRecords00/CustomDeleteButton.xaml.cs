@@ -23,6 +23,7 @@ namespace MuscleTrainingRecords00
                 {
                     ((CustomDeleteButton)bindable).textNoLabel.Text = (string)newValue;
                 });
+
         public static readonly BindableProperty NameTextProperty =
            BindableProperty.Create(
                "NameText",
@@ -34,27 +35,7 @@ namespace MuscleTrainingRecords00
                    ((CustomDeleteButton)bindable).textNameLabel.Text = (string)newValue;
                });
 
-        public static readonly BindableProperty CountTextProperty =
-          BindableProperty.Create(
-              "CountText",
-              typeof(string),
-              typeof(CustomDeleteButton),
-              null,
-              propertyChanged: (bindable, oldValue, newValue) =>
-              {
-                  ((CustomDeleteButton)bindable).textCountLabel.Text = (string)newValue;
-              });
-
-        public static readonly BindableProperty UnitTextProperty =
-          BindableProperty.Create(
-              "UnitText",
-              typeof(string),
-              typeof(CustomDeleteButton),
-              null,
-              propertyChanged: (bindable, oldValue, newValue) =>
-              {
-                  ((CustomDeleteButton)bindable).textUnitLabel.Text = (string)newValue;
-              });
+       
 
         public static readonly BindableProperty IsCheckedProperty =
            BindableProperty.Create(
@@ -93,18 +74,7 @@ namespace MuscleTrainingRecords00
             get { return (string)GetValue(NameTextProperty); }
         }
 
-        public string CountText
-        {
-            set { SetValue(CountTextProperty, value); }
-            get { return (string)GetValue(CountTextProperty); }
-        }
-
-        public string UnitText
-        {
-            set { SetValue(UnitTextProperty, value); }
-            get { return (string)GetValue(UnitTextProperty); }
-        }
-
+      
         public bool IsChecked
         {
             set { SetValue(IsCheckedProperty, value); }

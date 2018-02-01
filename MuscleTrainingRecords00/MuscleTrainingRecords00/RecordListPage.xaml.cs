@@ -64,8 +64,8 @@ namespace MuscleTrainingRecords00
             var result = await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
             if (result == true)
             {
-                int m_no = int.Parse(no);
-                RecordsModel.DeleteRecords(m_no);
+                int M_no = int.Parse(no);
+                RecordsModel.DeleteRecords(M_no);
 
                 
 
