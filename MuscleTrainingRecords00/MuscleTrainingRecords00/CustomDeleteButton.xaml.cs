@@ -87,7 +87,7 @@ namespace MuscleTrainingRecords00
 
        
 
-       /* public bool IsChecked
+        public bool IsChecked
         {
             set { SetValue(IsCheckedProperty, value); }
             get { return (bool)GetValue(IsCheckedProperty); }
@@ -97,6 +97,6 @@ namespace MuscleTrainingRecords00
         void OnButtonTapped(object sender, EventArgs args)
         {
             IsChecked = !IsChecked;
-        }*/
+        }
     }
 }

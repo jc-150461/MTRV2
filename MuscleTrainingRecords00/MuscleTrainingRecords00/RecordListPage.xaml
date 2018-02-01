@@ -73,9 +73,9 @@
                                    FontAttributes="Bold"/>
                                 <Label Text=""
                                        Grid.Column="1" Grid.Row="0"/>
-                                    <Label Text="{Binding M_date}"
+                                  <!--  <Label Text="{Binding M_date}"
                                            Grid.Column="2" Grid.Row="0"
-                                           FontAttributes="Bold"/>
+                                           FontAttributes="Bold"/> -->
                                 
                                 <toolkit:CustomDeleteButton CheckedChanged="CustomDeleteButton_CheckedChanged"
                                                         Grid.Column="2" Grid.Row="0"

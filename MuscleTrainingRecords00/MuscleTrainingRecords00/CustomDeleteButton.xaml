@@ -11,7 +11,7 @@
 
     </StackLayout>
 
-   <!-- <ContentView.GestureRecognizers>
+    <ContentView.GestureRecognizers>
         <TapGestureRecognizer Tapped="OnButtonTapped" />
-    </ContentView.GestureRecognizers> -->
+    </ContentView.GestureRecognizers> 
 </ContentView>
