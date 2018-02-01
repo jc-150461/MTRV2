@@ -58,17 +58,16 @@ namespace MuscleTrainingRecords00
 
         private async void deleteButton(object sender, EventArgs e)
         {
-            bool result = await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
+            var result = await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
 
             Record n = (Record)(list.SelectedItem);
-            string no = n.M_no.ToString();
+            int no = n.M_no;
+
             if (result == true)
             {
-                int M_no = int.Parse(no);
+                int M_no = no;
 
                 RecordsModel.DeleteRecords(M_no);
-
-
 
                 InitializeComponent();
             }
