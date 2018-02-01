@@ -73,16 +73,18 @@
                                    FontAttributes="Bold"/>
                                 <Label Text=""
                                        Grid.Column="1" Grid.Row="0"/>
-                                  <!--  <Label Text="{Binding M_date}"
+                                  <Label Text="{Binding M_date}"
                                            Grid.Column="2" Grid.Row="0"
-                                           FontAttributes="Bold"/> -->
-                                
-                                <toolkit:CustomDeleteButton CheckedChanged="CustomDeleteButton_CheckedChanged"
+                                           FontAttributes="Bold"/>
+                                <Button Image="ic_delete_2x.png"
+                                        Clicked="deleteButton"/>
+
+                               <!-- <toolkit:CustomDeleteButton CheckedChanged="CustomDeleteButton_CheckedChanged"
                                                         Grid.Column="2" Grid.Row="0"
                                                         HorizontalOptions="End"
                                                         NoText="{Binding M_no}"
                                                         NameText="{Binding M_name}"
-                                                      /> >
+                                                      /> -->
                                 
                                 
                             </Grid>
