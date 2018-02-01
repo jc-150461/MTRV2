@@ -35,7 +35,18 @@ namespace MuscleTrainingRecords00
                    ((CustomDeleteButton)bindable).textNameLabel.Text = (string)newValue;
                });
 
-       
+        public static readonly BindableProperty DateTextProperty =
+        BindableProperty.Create(
+            "DateText",
+            typeof(string),
+            typeof(CustomDeleteButton),
+            null,
+            propertyChanged: (bindable, oldValue, newValue) =>
+            {
+                ((CustomDeleteButton)bindable).textNameLabel.Text = (string)newValue;
+            });
+
+
 
         public static readonly BindableProperty IsCheckedProperty =
            BindableProperty.Create(
@@ -74,7 +85,12 @@ namespace MuscleTrainingRecords00
             get { return (string)GetValue(NameTextProperty); }
         }
 
-      
+        public string DateText
+        {
+            set { SetValue(DateTextProperty, value); }
+            get { return (string)GetValue(DateTextProperty); }
+        }
+
         public bool IsChecked
         {
             set { SetValue(IsCheckedProperty, value); }
