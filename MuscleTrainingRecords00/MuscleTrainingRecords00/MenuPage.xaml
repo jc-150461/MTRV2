@@ -61,7 +61,8 @@
 
             <BoxView 
                 BackgroundColor="Black"
-               />
+                HeightRequest="0.5"
+                />
 
             <StackLayout Orientation="Vertical">
 

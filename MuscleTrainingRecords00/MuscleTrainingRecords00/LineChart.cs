@@ -101,7 +101,7 @@ namespace MuscleTrainingRecords00
                 Title = "体重(kg)　体脂肪率(%)",
                 IsZoomEnabled = false,
                 Position = AxisPosition.Left,
-                Maximum = 80,
+                Maximum = 100,
                 Minimum = 10,
                 MajorStep = 10,
                 MajorGridlineStyle = LineStyle.Solid,
@@ -138,7 +138,7 @@ namespace MuscleTrainingRecords00
 
 
             var startDate = DateTime.Today.AddDays(-1);
-            var endDate = DateTime.Today.AddDays(+5);
+            var endDate = DateTime.Today.AddDays(+2);
 
             var minValue = DateTimeAxis.ToDouble(startDate);
             var maxValue = DateTimeAxis.ToDouble(endDate);
