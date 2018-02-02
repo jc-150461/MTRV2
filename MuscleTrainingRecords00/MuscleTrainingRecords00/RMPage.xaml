@@ -31,14 +31,14 @@
                 <Label
                     Text="挙上できる最大の重量、すなわちトレーニングで扱うことが可能となるMAXの重さを示す言葉。 尚、１ＲＭの「１」とは、「１回」につき最大で挙上することができる重量を指す。"
                     
-                    FontSize="Medium"/>
+                    FontSize="Default"/>
             </StackLayout>
 
 
             <StackLayout Orientation="Horizontal"
                          HorizontalOptions="StartAndExpand">
                 <Label Text="重量(kg)" 
-                       FontSize="Large"/>
+                       FontSize="Default"/>
                 <Entry x:Name="Weight" Placeholder="重量を入力してください"
                                         
                        WidthRequest="250"
@@ -49,7 +49,7 @@
                          HorizontalOptions="Start">
 
                 <Label Text="回数   "
-                       FontSize="Large"
+                       FontSize="Default"
                        />
 
                 <Picker x:Name="count" Title="数字を選択してください" WidthRequest="250" >
@@ -84,7 +84,7 @@
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center"
                    VerticalOptions="Center">
                 <Label Text="あなたの1RMは"
-                       FontSize="Large"
+                       FontSize="Default"
                       />
                 <!---
                 <Label Text="重量"
@@ -105,7 +105,7 @@
 
 
                 <Label Text="kgです"
-                       FontSize="Large"
+                       FontSize="Default"
                        HorizontalOptions="CenterAndExpand"
                        VerticalOptions="CenterAndExpand"
                       
