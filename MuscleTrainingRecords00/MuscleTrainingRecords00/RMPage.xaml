@@ -89,19 +89,19 @@
                        HorizontalOptions="CenterAndExpand"/>
             </StackLayout>
 
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
 
                 <Label x:Name="RM"
                        Text=" "
-                       TextColor="Lavender"
-                       VerticalOptions="Start"
+                       TextColor="MediumBlue"
+                       VerticalOptions="Center"
                        HorizontalOptions="Center"
                        FontSize="Large"/>
 
 
                 <Label Text="kgです"
                        FontSize="Default"
-                       VerticalOptions="Start"
+                       
                        HorizontalOptions="End"/>
 
             </StackLayout>
