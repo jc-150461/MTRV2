@@ -44,10 +44,13 @@ namespace MuscleTrainingRecords00
                     DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
 
                     InitializeComponent();
+                    Navigation.PushAsync(new RecordListPage());
                 }),
 
 
             };
+
+            this.ToolbarItems.Add(tItem);
             
         }
 
