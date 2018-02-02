@@ -101,7 +101,7 @@ namespace MuscleTrainingRecords00
                 Title = "体重(kg)　体脂肪率(%)",
                 IsZoomEnabled = false,
                 Position = AxisPosition.Left,
-                Maximum = 100,
+                Maximum = 80,
                 Minimum = 10,
                 MajorStep = 10,
                 MajorGridlineStyle = LineStyle.Solid,

@@ -75,7 +75,7 @@
 
 
             <Label Text="推定RM"
-                   FontSize="Large"
+                   FontSize="Default"
                    FontAttributes="Bold"
                    BackgroundColor="Silver"
                    HorizontalOptions="CenterAndExpand"
@@ -94,12 +94,11 @@
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
                    VerticalOptions="Center"
-                         Spacing="30">
+                        >
 
                 <Label x:Name="RM"
                        Text="　　   "
-                       WidthRequest="300"
-                       FontSize="100"
+                       
                        TextColor="Orange"
                        />
 

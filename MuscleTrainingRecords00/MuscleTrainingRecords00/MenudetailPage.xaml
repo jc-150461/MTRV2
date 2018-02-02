@@ -22,7 +22,7 @@
                    FontSize="Large"
                    FontAttributes="Bold"/>
 
-            <Button  Clicked="addItemButton_Clicked" Text="記録へ追加" x:Name="addItemButton" BackgroundColor="RoyalBlue" TextColor="White" FontSize="Large" VerticalOptions="EndAndExpand" />
+            <Button  Clicked="addItemButton_Clicked" Text="記録へ追加" x:Name="addItemButton" BackgroundColor="RoyalBlue" TextColor="White" FontSize="Default" VerticalOptions="EndAndExpand" />
 
 
         </StackLayout>
