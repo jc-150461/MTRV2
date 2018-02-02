@@ -81,24 +81,16 @@
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="Center"/>
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center"
+            
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center"
                    VerticalOptions="Center">
                 <Label Text="あなたの1RMは"
-                       FontSize="Default"
-                      />
-                <!---
-                <Label Text="重量"
-                       FontSize="Large"/>
-                 -->
-            </StackLayout>
-
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="Center"
-                        >
+                       FontSize="Default"/>
+                
+            
 
                 <Label x:Name="RM"
                        Text="　　   "
-                       
                        TextColor="Orange"
                        />
 
@@ -106,10 +98,8 @@
                 <Label Text="kgです"
                        FontSize="Default"
                        HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="CenterAndExpand"
-                      
-                      />
-                <!--ここ良い配置できない-->
+                       VerticalOptions="CenterAndExpand"/>
+
             </StackLayout>
 
 

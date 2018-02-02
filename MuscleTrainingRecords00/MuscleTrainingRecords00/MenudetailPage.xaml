@@ -12,14 +12,14 @@
                    x:Name="Transition"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="StartAndExpand"
-                   FontSize="Large"
+                   FontSize="Default"
                    FontAttributes="Bold"/>
 
             <Label Text=""
                    x:Name="Description"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="EndAndExpand"
-                   FontSize="Large"
+                   FontSize="Default"
                    FontAttributes="Bold"/>
 
             <Button  Clicked="addItemButton_Clicked" Text="記録へ追加" x:Name="addItemButton" BackgroundColor="RoyalBlue" TextColor="White" FontSize="Default" VerticalOptions="EndAndExpand" />
