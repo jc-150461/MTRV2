@@ -73,26 +73,29 @@
                     Clicked="Button_Clicked"
                     BackgroundColor="#1e90ff" TextColor="White" FontSize="Large" HorizontalOptions="FillAndExpand" />
 
-
-            <Label Text="推定RM"
+            <StackLayout Orientation="Vertical">
+                <Label Text="推定RM"
                    FontSize="Default"
                    FontAttributes="Bold"
                    BackgroundColor="Silver"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="Center"/>
 
-            
-            <StackLayout Orientation="Vertical" HorizontalOptions="Center"
-                   VerticalOptions="Center">
+
+
                 <Label Text="あなたの1RMは"
-                       FontSize="Default"/>
-                
-            
+                       FontSize="Default"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
 
                 <Label x:Name="RM"
                        Text="　　   "
                        TextColor="Orange"
-                       />
+                       VerticalOptions="Start"
+                       HorizontalOptions="CenterAndExpand"/>
 
 
                 <Label Text="kgです"
