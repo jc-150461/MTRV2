@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
             
-                <ToolbarItem Text="メニュー削除" Icon="ic_delete.png" Clicked="ToolbarItem_Clicked" />
+                
             
 
             <Label Text=""
