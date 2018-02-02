@@ -93,9 +93,10 @@
 
                 <Label x:Name="RM"
                        Text="　　   "
-                       TextColor="Orange"
-                       VerticalOptions="Start"
-                       HorizontalOptions="CenterAndExpand"/>
+                       TextColor="LightBlue"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       FontSize="Large"/>
 
 
                 <Label Text="kgです"
