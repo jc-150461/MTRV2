@@ -102,8 +102,8 @@
                 <Label Text="kgです"
                        FontSize="Default"
                        VerticalOptions="Start"
-                       HorizontalOptions="End"
-                       
+                       HorizontalOptions="End"/>
+
             </StackLayout>
 
 
