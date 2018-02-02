@@ -17,7 +17,8 @@ namespace MuscleTrainingRecords00
         {
             InitializeComponent();
 
-           
+
+
         }
 
 
@@ -35,12 +36,12 @@ namespace MuscleTrainingRecords00
 
         }
 
-        
-        
+
+
 
         private void RecordListButton(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MenuPage());            
+            Navigation.PushAsync(new MenuPage());
         }
 
         private void list_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -48,71 +49,69 @@ namespace MuscleTrainingRecords00
             Record r = (Record)(list.SelectedItem);
             string l = r.M_name;
 
-            Record n =(Record)(list.SelectedItem);
+            Record n = (Record)(list.SelectedItem);
             int m = n.M_no;
 
             ReModelv2.key = m;
-            Navigation.PushAsync(new RecordPage(l,m));
+            Navigation.PushAsync(new RecordPage(l, m));
 
         }
 
-        private async void deleteButton(object sender, EventArgs e)
-        {
-            /*
-            var result = await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
+        /* private async void deleteButton(object sender, EventArgs e)
+         {
+
+             var result = await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
 
 
-            Record n = (Record)(list.SelectedItem);
-            int no = n.M_no;
-            if (result == true)
-            {
-                int M_no = no;
+             Record n = (Record)(list.SelectedItem);
+             int no = n.M_no;
+             if (result == true)
+             {
+                 int M_no = no;
 
-                RecordsModel.DeleteRecords(M_no);
+                 RecordsModel.DeleteRecords(M_no);
 
-                InitializeComponent();
-            }
-            */
+                 InitializeComponent();
+             }*/
 
-            Record n = (Record)(list.SelectedItem);
-            int no = n.M_no;
-           
-            int M_no = no;
+        /*
+        Record n = (Record)(list.SelectedItem);
+        int no = n.M_no;
 
-            await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
+        int M_no = no;
 
-            RecordsModel.DeleteRecords(M_no);
+        await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
 
-            InitializeComponent();
+        RecordsModel.DeleteRecords(M_no);
 
-        }
-
-       /* async void CustomDeleteButton_CheckedChanged(object sender, bool e)
-        {
-            string no = ((CustomDeleteButton)sender).NoText;
-            string name = ((CustomDeleteButton)sender).NameText;
-            
-
-            var result = await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
-            if (result == true)
-            {
-                int M_no = int.Parse(no);
-                
-                RecordsModel.DeleteRecords(M_no);
-
-                
-
-                InitializeComponent();
-            }
-
-
-
-        }*/
-
-        /*private async void button_Clicked(object sender, EventArgs e)
-        {
-            RecordsModel.DeleteRecords();
-        }*/
+        InitializeComponent();*/
 
     }
+
+    /* async void CustomDeleteButton_CheckedChanged(object sender, bool e)
+     {
+         string no = ((CustomDeleteButton)sender).NoText;
+         string name = ((CustomDeleteButton)sender).NameText;
+
+
+         var result = await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
+         if (result == true)
+         {
+             int M_no = int.Parse(no);
+
+             RecordsModel.DeleteRecords(M_no);
+
+
+
+             InitializeComponent();
+         }
+
+
+
+     }*/
+
+    /*private async void button_Clicked(object sender, EventArgs e)
+    {
+        RecordsModel.DeleteRecords();
+    }*/
 }
