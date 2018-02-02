@@ -27,6 +27,10 @@ namespace MuscleTrainingRecords00
             //image.Source = i;
 
             t = m;
+
+         
+                
+            
         }
 
         private void addItemButton_Clicked(object sender, EventArgs e)
@@ -38,23 +42,6 @@ namespace MuscleTrainingRecords00
 
         }
 
-        private async void ToolbarItem_Clicked(object sender, EventArgs e,string m)
-        {
-            var result = await DisplayAlert("削除", "この記録を削除しますか", "OK", "キャンセル");
-
-            if (result == true)
-            {
-                int M_no = int.Parse(m);
-
-                RecordsModel.DeleteRecords(M_no);
-
-                await Navigation.PushAsync(new RecordListPage());
-
-
-
-                InitializeComponent();
-            }
-        }
 
         /*public MenudetaliPage(String l)
         {
