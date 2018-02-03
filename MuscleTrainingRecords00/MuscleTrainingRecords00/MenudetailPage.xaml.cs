@@ -20,11 +20,17 @@ namespace MuscleTrainingRecords00
             InitializeComponent();
 
 
-            Transition.Text = m.Trim();
+            Transition.Text = m.Trim(); //メニュー名
 
-            Description.Text = d;
+            Load.Text = l; //負荷度
 
-            //image.Source = i;
+            Description.Text = d; //やり方
+
+           
+
+            image.Source = ImageSource.FromResource(i);
+
+            iname.Text = i;
 
             t = m;
 
