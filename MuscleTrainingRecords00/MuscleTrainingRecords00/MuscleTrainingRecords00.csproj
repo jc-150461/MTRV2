@@ -175,6 +175,23 @@
     <EmbeddedResource Include="image\abukura.png" />
     <EmbeddedResource Include="image\dumbbell_man.png" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="image\ba-thikarubenchi.jpg" />
+    <EmbeddedResource Include="image\ballbike.jpg" />
+    <EmbeddedResource Include="image\ballcl.jpg" />
+    <EmbeddedResource Include="image\danbel cl.jpg" />
+    <EmbeddedResource Include="image\hanngingu.jpg" />
+    <EmbeddedResource Include="image\Noimage_image.png" />
+    <EmbeddedResource Include="image\pull-up-knee-raise.jpg" />
+    <EmbeddedResource Include="image\reggurize.jpg" />
+    <EmbeddedResource Include="image\reghold.jpg" />
+    <EmbeddedResource Include="image\rusiantuwist.jpg" />
+    <EmbeddedResource Include="image\sidebike.jpg" />
+    <EmbeddedResource Include="image\sidecl.jpg" />
+    <EmbeddedResource Include="image\trunk-twist.png" />
+    <EmbeddedResource Include="image\TRX.jpg" />
+    <Content Include="image\weighted-crunch.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.4.0.280\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.4.0.280\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

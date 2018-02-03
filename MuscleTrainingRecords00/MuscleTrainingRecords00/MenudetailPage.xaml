@@ -53,7 +53,7 @@
                 
                 <Label Text=""
                    x:Name="Description"
-                   HorizontalOptions="EndAndExpand"
+                   HorizontalOptions="StartAndExpand"
                    VerticalOptions="EndAndExpand"
                    FontSize="Default"
                    FontAttributes="Bold"/>
