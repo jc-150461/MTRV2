@@ -29,11 +29,11 @@ namespace MuscleTrainingRecords00
 
             Description.Text = d; //やり方
 
-            image.Source = ImageSource.FromResource(i);
+           
 
-            image2.Source = ImageSource.FromStream(() => GetType().GetTypeInfo().Assembly.GetManifestResourceStream(i));
+            image.Source = ImageSource.FromStream(() => GetType().GetTypeInfo().Assembly.GetManifestResourceStream(i));
 
-            iname.Text = i;
+          
 
 
 

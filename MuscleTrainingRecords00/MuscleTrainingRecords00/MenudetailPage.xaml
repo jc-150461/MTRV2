@@ -15,28 +15,43 @@
                      WinPhone="0, 0, 0, 0" />
             </StackLayout.Margin>
 
-            <Label Text=""
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" >
+                <Label Text=""
                    x:Name="Transition"
                    HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="StartAndExpand"
+                  
                    FontSize="Large"
                    FontAttributes="Bold"/>
-          
 
-            <Image x:Name="image"/>
+                <Label Text=""
+                   x:Name="Load"
+                   HorizontalOptions="EndAndExpand"
+                   FontSize="Default"
+                   TextColor="Red"/>
+            </StackLayout>
 
-            <Image x:Name="image2"/>
+            <StackLayout Orientation="Vertical">
 
-            <Label x:Name="iname"/>
 
-            <Label Text=""
+
+                
+                <Image x:Name="image"/>
+
+                
+
+                <Label Text=""
                    x:Name="Description"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="EndAndExpand"
-                   FontSize="Large"
+                   FontSize="Default"
                    FontAttributes="Bold"/>
 
-            <Button  Clicked="addItemButton_Clicked" Text="記録へ追加" x:Name="addItemButton" BackgroundColor="RoyalBlue" TextColor="White" FontSize="Large" VerticalOptions="EndAndExpand" />
+            </StackLayout>
+
+
+            <Button  Clicked="addItemButton_Clicked" Text="記録へ追加" x:Name="addItemButton" BackgroundColor="RoyalBlue" TextColor="White" FontSize="Default" VerticalOptions="EndAndExpand" />
+
 
         </StackLayout>
     </ContentPage.Content>
