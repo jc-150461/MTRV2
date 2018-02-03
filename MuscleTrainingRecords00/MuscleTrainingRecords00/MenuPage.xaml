@@ -19,7 +19,7 @@
 
            
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="30">
 
 
                 <Button x:Name="全部"
@@ -68,7 +68,8 @@
 
                 <ListView x:Name="listView"
                       SeparatorColor="Black"
-                      ItemTapped="listView_ItemTapped" />
+                      ItemTapped="listView_ItemTapped"
+                      RowHeight="70"/>
 
             </StackLayout>
 
