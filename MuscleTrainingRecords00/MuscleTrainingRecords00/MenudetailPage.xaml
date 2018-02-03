@@ -38,18 +38,22 @@
                 
                 <Image x:Name="image"
                        VerticalOptions="StartAndExpand"
-                       HorizontalOptions="CenterAndExpand"/>
+                       HorizontalOptions="StartAndExpand"
+                       WidthRequest="400"
+                       HeightRequest="200"
+                       Aspect="Fill"/>
 
 
                 <Label Text="やり方"
                        HorizontalOptions="Start"
                        FontSize="Large"
                        FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
                        />
                 
                 <Label Text=""
                    x:Name="Description"
-                   HorizontalOptions="CenterAndExpand"
+                   HorizontalOptions="EndAndExpand"
                    VerticalOptions="EndAndExpand"
                    FontSize="Default"
                    FontAttributes="Bold"/>
