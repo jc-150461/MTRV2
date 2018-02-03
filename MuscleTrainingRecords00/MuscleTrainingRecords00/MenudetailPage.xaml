@@ -27,7 +27,7 @@
                    x:Name="Load"
                    HorizontalOptions="EndAndExpand"
                    FontSize="Default"
-                   TextColor="Yellow"/>
+                   TextColor="Red"/>
         </StackLayout>
 
             <StackLayout VerticalOptions="CenterAndExpand">
@@ -46,9 +46,11 @@
                    FontSize="Default"
                    FontAttributes="Bold"/>
 
-                <Button  Clicked="addItemButton_Clicked" Text="記録へ追加" x:Name="addItemButton" BackgroundColor="RoyalBlue" TextColor="White" FontSize="Default" VerticalOptions="EndAndExpand" />
-
             </StackLayout>
+
+            <Button  Clicked="addItemButton_Clicked" Text="記録へ追加" x:Name="addItemButton" BackgroundColor="RoyalBlue" TextColor="White" FontSize="Default" VerticalOptions="EndAndExpand" />
+
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
