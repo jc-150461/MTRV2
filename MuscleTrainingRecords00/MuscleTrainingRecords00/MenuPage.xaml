@@ -69,7 +69,8 @@
                 <ListView x:Name="listView"
                       SeparatorColor="Black"
                       ItemTapped="listView_ItemTapped"
-                      RowHeight="70"/>
+                    HasUnevenRows="True"
+                      SeparatorColor="LightPink"/>
 
             </StackLayout>
 
