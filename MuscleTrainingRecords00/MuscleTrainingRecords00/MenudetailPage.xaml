@@ -45,7 +45,7 @@
 
 
                 <Label Text="やり方"
-                       HorizontalOptions="Start"
+                       
                        FontSize="Large"
                        FontAttributes="Bold"
                        HorizontalOptions="EndAndExpand"
