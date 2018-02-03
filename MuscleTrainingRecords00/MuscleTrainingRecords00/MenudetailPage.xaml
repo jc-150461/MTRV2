@@ -13,12 +13,7 @@
                    FontSize="Large"
                    FontAttributes="Bold"/>
 
-            <Image x:Name="image"/>
-
-            <Image x:Name="image2"/>
-
-            <Label x:Name="iname"/>
-
+            
             <Label Text=""
                    x:Name="Description"
                    HorizontalOptions="CenterAndExpand"

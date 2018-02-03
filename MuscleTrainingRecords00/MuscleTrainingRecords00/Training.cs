@@ -25,17 +25,17 @@ namespace MuscleTrainingRecords00
         {
             if (Menu.Equals("アブドミナルマシンクランチ（マシン）"))
             {
-                return Menu + "                                            　　　　 　　　   "  ;
+                return Menu + "                                            　　　　 　　　   " + Load;
             }
 
             if (Menu.Length < 27)
             {
-                return String.Format("{" + " " + ",28}", Menu); //%27s
+                return String.Format("{" + " " + ",28}", Menu) + Load; //%27s
 
             }
             else
             {
-                return Menu + "                                         "  ;
+                return Menu + "                                         " + Load;
             }
         }
     }
