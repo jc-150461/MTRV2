@@ -36,10 +36,17 @@
 
 
                 
-                <Image x:Name="image"/>
+                <Image x:Name="image"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="CenterAndExpand"/>
 
+
+                <Label Text="やり方"
+                       HorizontalOptions="Start"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       />
                 
-
                 <Label Text=""
                    x:Name="Description"
                    HorizontalOptions="CenterAndExpand"
