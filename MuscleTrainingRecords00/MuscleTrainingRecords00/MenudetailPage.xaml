@@ -35,6 +35,7 @@
                 
 
                 <Image x:Name="image"/>
+                <Image x:Name="image2"/>
 
                 <Label x:Name="iname"/>
 
