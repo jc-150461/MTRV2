@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using MuscleTrainingRecords00.sqlite;
 
+
 namespace MuscleTrainingRecords00
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]

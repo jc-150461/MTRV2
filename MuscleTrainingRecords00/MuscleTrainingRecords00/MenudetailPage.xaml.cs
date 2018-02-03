@@ -23,11 +23,16 @@ namespace MuscleTrainingRecords00
 
             Transition.Text = m.Trim(); //メニュー名
 
-            Load.Text = l; //負荷度
+            //Load.Text = l; //負荷度
+
+
 
             Description.Text = d; //やり方
 
+            image.Source = ImageSource.FromResource(i);
+
             image2.Source = ImageSource.FromStream(() => GetType().GetTypeInfo().Assembly.GetManifestResourceStream(i));
+
             iname.Text = i;
 
 
