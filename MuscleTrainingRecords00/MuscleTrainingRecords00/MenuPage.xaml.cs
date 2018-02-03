@@ -178,11 +178,11 @@ namespace MuscleTrainingRecords00
             string m = training.Menu;
             string d = training.Desc;
             string i = training.image;
-            string l = training.Load;
+            
 
             //Navigation.PushAsync(new MenudetaliPage(l));
 
-            Navigation.PushAsync(new MenudetaliPage(m, d, i,l));
+            Navigation.PushAsync(new MenudetaliPage(m, d, i));
         }
     }
 }
