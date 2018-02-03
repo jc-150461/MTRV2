@@ -70,7 +70,7 @@
                       
                       ItemTapped="listView_ItemTapped"
                     HasUnevenRows="True"
-                      SeparatorColor="LightPink"/>
+                      SeparatorColor="HotPink"/>
 
             </StackLayout>
 

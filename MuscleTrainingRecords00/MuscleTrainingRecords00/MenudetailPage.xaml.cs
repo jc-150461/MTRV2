@@ -15,7 +15,7 @@ namespace MuscleTrainingRecords00
 
         //今日の日付
         DateTime now = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-        public MenudetaliPage(string m, string d, string i)//String m
+        public MenudetaliPage(string m, string d, string i,string l)//String m
         {
             InitializeComponent();
 
