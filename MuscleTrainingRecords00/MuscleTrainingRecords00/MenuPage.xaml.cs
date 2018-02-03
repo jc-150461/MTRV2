@@ -36,7 +36,7 @@ namespace MuscleTrainingRecords00
 
         private static async Task storeInitialData(TrainingDatabase itemDataBase)
         {
-            Training pushup = new Training() { Menu = "アブドミナルマシンクランチ（マシン）", Load = "負荷度:☆☆", parts = "腹", Desc = "両脚は肩幅程度に開き、マシンのステップに足を乗せます。おへそを覗き込むように上体を丸めていく。（１０回ギリギリできるくらいのウェイトにセットして行いましょう", image = "MuscleTrainingRecords00.image.abukura.jpg" };
+            Training pushup = new Training() { Menu = "アブドミナルマシンクランチ（マシン）", Load = "負荷度:☆☆", parts = "腹", Desc = "両脚は肩幅程度に開き、マシンのステップに足を乗せます。おへそを覗き込むように上体を丸めていく。（１０回ギリギリできるくらいのウェイトにセットして行いましょう", image = "MuscleTrainingRecords00.image.abukura.png" };
             await itemDataBase.InsertItemAsync(pushup);
 
             await itemDataBase.InsertItemAsync(new Training() { Menu = "ウェィテッドクランチ（プレート）", Load = "負荷度:☆☆", parts = "腹", Desc = "プレートを頭の後ろに抱え、膝を曲げ首から上がベンチから出るように仰向けに寝ます。腹筋を意識しながら状態を丸めます。腹筋の緊張を解かないままゆっくり上体がつくまでおろす", image = "dumbbell_man.png" });
