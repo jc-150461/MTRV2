@@ -20,7 +20,7 @@
                    x:Name="Transition"
                    HorizontalOptions="CenterAndExpand"
                   
-                   FontSize="Default"
+                   FontSize="Large"
                    FontAttributes="Bold"/>
                 
             <Label Text=""
@@ -30,7 +30,7 @@
                    TextColor="Red"/>
         </StackLayout>
 
-            <StackLayout VerticalOptions="CenterAndExpand">
+            <StackLayout Orientation="Vertical">
 
                 
 
