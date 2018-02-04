@@ -74,7 +74,6 @@
                        
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
-                       Margin="30"
                        WidthRequest="200"/>
 
             </StackLayout>
@@ -91,7 +90,7 @@
                        
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
-                       Margin="30"/>
+                       />
 
 
 

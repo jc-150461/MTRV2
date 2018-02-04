@@ -99,7 +99,7 @@
                 <Label x:Name="RM"
                        Text=" "
                        TextColor="OrangeRed"
-                       VerticalOptions="Center"
+                       VerticalOptions="Start"
                        HorizontalOptions="Center"
                        FontSize="Large"/>
 
@@ -107,7 +107,8 @@
                 <Label Text="kgです"
                        FontSize="Default"
                        
-                       HorizontalOptions="End"/>
+                       HorizontalOptions="End"
+                       VerticalOptions="Start"/>
 
             </StackLayout>
 
