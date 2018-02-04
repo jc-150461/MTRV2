@@ -190,7 +190,7 @@
     <EmbeddedResource Include="image\sidecl.jpg" />
     <EmbeddedResource Include="image\trunk-twist.png" />
     <EmbeddedResource Include="image\TRX.jpg" />
-    <Content Include="image\weighted-crunch.jpg" />
+    <EmbeddedResource Include="image\weighted-crunch.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.4.0.280\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.4.0.280\build\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.targets')" />
