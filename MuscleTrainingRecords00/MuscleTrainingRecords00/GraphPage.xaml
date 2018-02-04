@@ -94,9 +94,10 @@
 
 
 
-                <Button  Clicked="Handle_ClickedAsync" Text="保存" x:Name="addItemButton" BackgroundColor="RoyalBlue" TextColor="White" FontSize="Large" VerticalOptions="EndAndExpand" />
+             
 
             </StackLayout>
+            <Button  Clicked="Handle_ClickedAsync" Text="保存" x:Name="addItemButton" BackgroundColor="RoyalBlue" TextColor="White" FontSize="Large" VerticalOptions="EndAndExpand" />
 
 
         </StackLayout>
