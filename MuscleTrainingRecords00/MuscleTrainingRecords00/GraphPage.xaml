@@ -24,7 +24,8 @@
             <!--DBver-->
             <oxy:PlotView Model="{Binding Model}"
                           VerticalOptions="FillAndExpand"
-                          HorizontalOptions="FillAndExpand">
+                          HorizontalOptions="FillAndExpand"
+                          HeightRequest="250">
                 <oxy:PlotView.BindingContext>
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
@@ -52,11 +53,13 @@
 
 
                 <Label Text="日付" 
-                       FontSize="Medium"/>
+                       FontSize="Medium"
+                       VerticalOptions="StartAndExpand"/>
                 <Label Text="   "
                        FontSize="Large"
                        x:Name="today"
-                       FormattedText = "yyyy/MM/dd"/>
+                       FormattedText = "yyyy/MM/dd"
+                       VerticalOptions="StartAndExpand"/>
 
                 
 
