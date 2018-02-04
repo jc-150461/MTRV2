@@ -42,7 +42,7 @@
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="StartAndExpand"
                        WidthRequest="400"
-                       HeightRequest="400"
+                       HeightRequest="340"
                        Aspect="Fill"/>
 
 
@@ -50,7 +50,7 @@
                        
                        FontSize="Large"
                        FontAttributes="Bold"
-                       HorizontalOptions="EndAndExpand"
+                       HorizontalOptions="Start"
                        />
                 
                 <Label Text=""
