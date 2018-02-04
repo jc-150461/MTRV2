@@ -34,19 +34,7 @@ namespace MuscleTrainingRecords00
 
         public async void Handle_ClickedAsync(object sender, System.EventArgs e)
         {
-            try
-            {
-
-                if (bWeight.Text == null)
-                {
-                    DisplayAlert("", "体重を入力してください", "OK");
-
-                }
-                else if (bFat.Text == null)
-                {
-                    DisplayAlert("", "体脂肪率を入力してください", "OK");
-                }
-
+            
 
                 var db = TodoItemDatabase.getDatabase();
                 //String sName = eName.Text;
@@ -57,13 +45,14 @@ namespace MuscleTrainingRecords00
                 DateTime dCreated = DateTime.Today;
 
 
-                //TodoItem sameDateItem = await db.GetItemByCreatedAsync(dCreated);
-                //if (sameDateItem == null)
-                //{
+                TodoItem sameDateItem = await db.GetItemByCreatedAsync(dCreated);
+                if (sameDateItem == null)
+                {
                     TodoItem item = new TodoItem() { Created = dCreated, Bweight = B_Weight, Bfat = B_Fat };
                     await db.SaveItemAsync(item);
                     await DisplayAlert("", "記録されました:" + item.Created, "OK");
-                /*}
+                }
+
                 else
                 {
                     await db.DeleteItemAsync(sameDateItem);
@@ -71,14 +60,11 @@ namespace MuscleTrainingRecords00
                     await db.SaveItemAsync(item);
                     await DisplayAlert("", "更新されました:{" + sameDateItem.Created + "}→{" + item.Created + "}", "OK");
 
-                }*/
+                }
 
                 Application.Current.MainPage = new MainPage();
             }
-            catch (Exception)
-            {
-                DisplayAlert("", "数値を入力してください", "OK");
-            }
+           
 
             /*private void eCreated_DateSelected(object sender, DateChangedEventArgs e)//追加
             {
