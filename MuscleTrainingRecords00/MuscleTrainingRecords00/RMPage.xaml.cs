@@ -36,6 +36,7 @@ namespace MuscleTrainingRecords00
                     DisplayAlert("", "重量を入力してください。", "OK");
                     //Weight.Text = "入力してください。";
                 }
+            
 
                 else if (dCount == 1)
                 {
@@ -107,10 +108,11 @@ namespace MuscleTrainingRecords00
                     RM.Text = k.ToString();
                 }
             }
+            
 
             catch (Exception)
             {
-                DisplayAlert("", "入力してください。", "OK");
+                DisplayAlert("", "数値を入力してください。", "OK");
             }
         }
     }
