@@ -34,42 +34,41 @@ namespace MuscleTrainingRecords00
 
         public async void Handle_ClickedAsync(object sender, System.EventArgs e)
         {
-            
-
-                var db = TodoItemDatabase.getDatabase();
-                //String sName = eName.Text;
-                //String sNotes = eNotes.Text;
-                //Boolean bDone = eDone.IsToggled;
-                int B_Weight = int.Parse(bWeight.Text);
-                int B_Fat = int.Parse(bFat.Text);
-                DateTime dCreated = DateTime.Today;
 
 
-                TodoItem sameDateItem = await db.GetItemByCreatedAsync(dCreated);
-                if (sameDateItem == null)
-                {
-                    TodoItem item = new TodoItem() { Created = dCreated, Bweight = B_Weight, Bfat = B_Fat };
-                    await db.SaveItemAsync(item);
-                    await DisplayAlert("", "記録されました:" + item.Created, "OK");
-                }
+            var db = TodoItemDatabase.getDatabase();
+            //String sName = eName.Text;
+            //String sNotes = eNotes.Text;
+            //Boolean bDone = eDone.IsToggled;
+            int B_Weight = int.Parse(bWeight.Text);
+            int B_Fat = int.Parse(bFat.Text);
+            DateTime dCreated = DateTime.Today;
 
-                else
-                {
-                    await db.DeleteItemAsync(sameDateItem);
-                    TodoItem item = new TodoItem() { Created = dCreated, Bweight = B_Weight, Bfat = B_Fat };
-                    await db.SaveItemAsync(item);
-                    await DisplayAlert("", "更新されました:{" + sameDateItem.Created + "}→{" + item.Created + "}", "OK");
 
-                }
-
-                Application.Current.MainPage = new MainPage();
-            }
-           
-
-            /*private void eCreated_DateSelected(object sender, DateChangedEventArgs e)//追加
+            TodoItem sameDateItem = await db.GetItemByCreatedAsync(dCreated);
+            if (sameDateItem == null)
             {
-                yyyymmdd = new DateTime(eCreated.Date.Year, eCreated.Date.Month, eCreated.Date.Day);
-            }*/
+                TodoItem item = new TodoItem() { Created = dCreated, Bweight = B_Weight, Bfat = B_Fat };
+                await db.SaveItemAsync(item);
+                await DisplayAlert("", "記録されました:" + item.Created, "OK");
+            }
+
+            else
+            {
+                await db.DeleteItemAsync(sameDateItem);
+                TodoItem item = new TodoItem() { Created = dCreated, Bweight = B_Weight, Bfat = B_Fat };
+                await db.SaveItemAsync(item);
+                await DisplayAlert("", "更新されました:{" + sameDateItem.Created + "}→{" + item.Created + "}", "OK");
+
+            }
+
+            Application.Current.MainPage = new MainPage();
         }
+
+
+        /*private void eCreated_DateSelected(object sender, DateChangedEventArgs e)//追加
+        {
+            yyyymmdd = new DateTime(eCreated.Date.Year, eCreated.Date.Month, eCreated.Date.Day);
+        }*/
     }
 }
