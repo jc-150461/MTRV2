@@ -33,20 +33,20 @@ namespace MuscleTrainingRecords00
 
         /********************ここから追加******************************************/
 
-        public async void Handle_ClickedAsync(object sender, System.EventArgs e  )
+        public async void Handle_ClickedAsync(object sender, System.EventArgs e)
         {
-            
 
-                if (bWeight.Text == null)
-                {
-                    await DisplayAlert("", "体重を入力してください", "OK");
 
-                }
-                else if (bFat.Text == null)
-                {
-                    await DisplayAlert("", "体脂肪率を入力してください", "OK");
-                }
-                else if (bWeight.Text == null && bFat.Text == null )
+            if (bWeight.Text == null)
+            {
+                await DisplayAlert("", "体重を入力してください", "OK");
+
+            }
+            else if (bFat.Text == null)
+            {
+                await DisplayAlert("", "体脂肪率を入力してください", "OK");
+            }
+            else if (bWeight.Text == null && bFat.Text == null)
             {
                 await DisplayAlert("", "入力してください", "OK");
             }
@@ -91,14 +91,13 @@ namespace MuscleTrainingRecords00
             {
                 await DisplayAlert("", "数値を入力してください", "OK");
             }
-            }
-      
+        }
+    }
+}
+
 
 
         /*private void eCreated_DateSelected(object sender, DateChangedEventArgs e)//追加
         {
             yyyymmdd = new DateTime(eCreated.Date.Year, eCreated.Date.Month, eCreated.Date.Day);
         }*/
-    }
-    }
-}
