@@ -63,7 +63,7 @@
             </StackLayout>
 
 
-            <StackLayout Orientation="Vertical"
+            <StackLayout Orientation="Horizontal"
                      Spacing="10" >
 
 
@@ -71,15 +71,15 @@
                        FontSize="Medium"/>
 
                 <Entry x:Name="bWeight" Placeholder="体重を入力してください" 
-                       
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
+                       WidthRequest="200"
+                       HorizontalOptions="End"
+                       VerticalOptions="End"
                        Margin="30"/>
 
             </StackLayout>
 
 
-            <StackLayout Orientation="Vertical"
+            <StackLayout Orientation="Horizontal"
                      Spacing="10" >
 
                 <Label Text="体脂肪(%)"
@@ -88,8 +88,8 @@
                 <Entry x:Name="bFat" Placeholder="体脂肪を入力してください"
                        WidthRequest="200"
                        
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
+                       HorizontalOptions="End"
+                       VerticalOptions="End"
                        Margin="30"/>
 
 
