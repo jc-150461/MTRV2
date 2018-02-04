@@ -63,7 +63,7 @@
             </StackLayout>
 
 
-            <StackLayout Orientation="Vertical"
+            <StackLayout Orientation="Horizontal"
                      Spacing="10" >
 
 
@@ -74,12 +74,13 @@
                        
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
-                       Margin="30"/>
+                       Margin="30"
+                       WidthRequest="200"/>
 
             </StackLayout>
 
 
-            <StackLayout Orientation="Vertical"
+            <StackLayout Orientation="Horizontal"
                      Spacing="10" >
 
                 <Label Text="体脂肪(%)"

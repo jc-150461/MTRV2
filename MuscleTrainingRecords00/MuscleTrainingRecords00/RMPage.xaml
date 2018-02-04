@@ -36,23 +36,28 @@
 
 
             <StackLayout Orientation="Horizontal"
-                         HorizontalOptions="StartAndExpand">
+                         >
                 <Label Text="重量(kg)" 
-                       FontSize="Default"/>
-                <Entry x:Name="Weight" Placeholder="重量を入力してください"
-                                        
+                       FontSize="Default"
+                       VerticalOptions="StartAndExpand"/>
+                <Entry x:Name="Weight"
+                       Placeholder="重量を入力してください"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="StartAndExpand"
                        WidthRequest="250"
                        />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal"
-                         HorizontalOptions="Start">
+                         >
 
-                <Label Text="回数   "
+                <Label Text="Raps(回数)"
                        FontSize="Default"
+                       VerticalOptions="StartAndExpand"
+                       
                        />
 
-                <Picker x:Name="count" Title="数字を選択してください" WidthRequest="250" >
+                <Picker x:Name="count" Title="数字を選択してください" WidthRequest="250" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand" >
                     <Picker.Items>
                         <x:String>1</x:String>
                         <x:String>2</x:String>
@@ -93,7 +98,7 @@
 
                 <Label x:Name="RM"
                        Text=" "
-                       TextColor="MediumBlue"
+                       TextColor="OrangeRed"
                        VerticalOptions="Center"
                        HorizontalOptions="Center"
                        FontSize="Large"/>
