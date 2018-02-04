@@ -19,13 +19,12 @@
                      WinPhone="0, 0, 0, 0" />
             </StackLayout.Margin>
 
-           
+
 
             <!--DBver-->
             <oxy:PlotView Model="{Binding Model}"
                           VerticalOptions="FillAndExpand"
-                          HorizontalOptions="FillAndExpand"
-                          HeightRequest="250">
+                          HorizontalOptions="FillAndExpand">
                 <oxy:PlotView.BindingContext>
                     <local:LineChart />
                 </oxy:PlotView.BindingContext>
@@ -53,20 +52,18 @@
 
 
                 <Label Text="日付" 
-                       FontSize="Medium"
-                       VerticalOptions="StartAndExpand"/>
+                       FontSize="Medium"/>
                 <Label Text="   "
                        FontSize="Large"
                        x:Name="today"
-                       FormattedText = "yyyy/MM/dd"
-                       VerticalOptions="StartAndExpand"/>
+                       FormattedText = "yyyy/MM/dd"/>
 
-                
+
 
             </StackLayout>
 
 
-            <StackLayout Orientation="Horizontal"
+            <StackLayout Orientation="Vertical"
                      Spacing="10" >
 
 
@@ -77,12 +74,13 @@
                        
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
+                       Margin="30"
                        WidthRequest="200"/>
 
             </StackLayout>
 
 
-            <StackLayout Orientation="Horizontal"
+            <StackLayout Orientation="Vertical"
                      Spacing="10" >
 
                 <Label Text="体脂肪(%)"
@@ -93,7 +91,7 @@
                        
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
-                       />
+                       Margin="30"/>
 
 
 

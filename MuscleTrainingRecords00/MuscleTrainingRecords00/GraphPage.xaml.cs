@@ -42,7 +42,7 @@ namespace MuscleTrainingRecords00
             try
             {
 
-                /*if (bWeight.Text == null)
+                if (bWeight.Text == null)
                 {
                     await DisplayAlert("", "体重を入力してください", "OK");
 
@@ -50,7 +50,7 @@ namespace MuscleTrainingRecords00
                 else if (bFat.Text == null)
                 {
                     await DisplayAlert("", "体脂肪率を入力してください", "OK");
-                }*/
+                }
                
 
 
