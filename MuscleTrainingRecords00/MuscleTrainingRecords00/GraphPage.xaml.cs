@@ -19,7 +19,7 @@ namespace MuscleTrainingRecords00
             InitializeComponent();
 
             today.Text = DateTime.Today.ToString("yyyy/MM/dd");
-            addItemButton.Clicked += Handle_ClickedAsync;
+            
 
         }
         //DateTime yyyymmdd;//追加
@@ -32,7 +32,7 @@ namespace MuscleTrainingRecords00
 
         /********************ここから追加******************************************/
 
-        public async void Handle_ClickedAsync(object sender, System.EventArgs e)
+        async Task Handle_ClickedAsync(object sender, System.EventArgs e)
         {
 
 
