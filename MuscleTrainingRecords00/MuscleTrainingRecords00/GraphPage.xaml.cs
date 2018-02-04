@@ -46,7 +46,7 @@ namespace MuscleTrainingRecords00
                 {
                     DisplayAlert("", "体脂肪率を入力してください", "OK");
                 }
-                    
+
 
                 var db = TodoItemDatabase.getDatabase();
                 //String sName = eName.Text;

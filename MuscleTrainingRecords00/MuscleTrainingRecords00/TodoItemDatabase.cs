@@ -8,27 +8,27 @@ namespace MuscleTrainingRecords00
 {
     public class TodoItemDatabase
     {
-        
+
         readonly SQLiteAsyncConnection database;
 
         public TodoItemDatabase(string dbPath)
         {
             database = new SQLiteAsyncConnection(dbPath);
             database.CreateTableAsync<TodoItem>().Wait();
-            
+
         }
 
         public Task<List<TodoItem>> GetItemsAsync()
         {
             return database.Table<TodoItem>().ToListAsync();
-            
+
         }
 
 
 
         public Task<List<TodoItem>> GetItemsNotDoneAsync()
         {
-            
+
 
             return database.QueryAsync<TodoItem>("SELECT * FROM [TodoItem] WHERE [Done] = 0 "
                                                   + " order by [Created] desc"
