@@ -83,7 +83,7 @@ namespace MuscleTrainingRecords00
                     Application.Current.MainPage = new MainPage();
                 
             }
-            catch (FormatException )
+        catch (Exception)
             {
                 await DisplayAlert("", "数値を入力してください", "OK");
             }
