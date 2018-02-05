@@ -24,7 +24,7 @@
         </x:Arguments>
     </NavigationPage>
 
-    <NavigationPage Title="ボディー統計" Icon="graph (1).png">
+    <NavigationPage Title="ボディ統計" Icon="graph (1).png">
         <x:Arguments>
             <local:GraphPage />
         </x:Arguments>

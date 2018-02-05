@@ -12,7 +12,7 @@ namespace MuscleTrainingRecords
         public GraphPageCS()
         {
 
-            Title = "ボディー統計";
+            Title = "ボディ統計";
             Content = new StackLayout
             {
                 Children = {
