@@ -48,8 +48,8 @@
                
                 <Entry x:Name="Weight"
                        Placeholder="重量を入力してください"
-                       HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="EndAndExpand"
                        WidthRequest="250"
                        />
             </StackLayout>
