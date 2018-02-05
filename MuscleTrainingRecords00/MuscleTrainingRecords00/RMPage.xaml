@@ -28,6 +28,7 @@
                        FontAttributes="Bold"
                        HorizontalOptions="StartAndExpand"
                        VerticalOptions="StartAndExpand"/>
+                
                 <Label 
                     Text="挙上できる最大の重量、すなわちトレーニングで扱うことが可能となるMAXの重さを示す言葉。 尚、１ＲＭの「１」とは、「１回」につき最大で挙上することができる重量を指す。"
                     HorizontalOptions="StartAndExpand"
@@ -41,14 +42,14 @@
                          >
                 <Label Text="重量(kg)" 
                        FontSize="Default"
-                       VerticalOptions="StartAndExpand"
-                       HorizontalOptions="StartAndExpand"/>
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"/>
                 
                
                 <Entry x:Name="Weight"
                        Placeholder="重量を入力してください"
-                       HorizontalOptions="StartAndExpand"
-                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
                        WidthRequest="250"
                        />
             </StackLayout>
@@ -59,8 +60,8 @@
 
                 <Label Text="Raps(回数)"
                        FontSize="Default"
-                       VerticalOptions="StartAndExpand"
-                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand"
                        
                        />
 
@@ -114,7 +115,7 @@
                 <Label Text="kgです"
                        FontSize="Default"
                        
-                       HorizontalOptions="CenterAndExpand"
+                       HorizontalOptions="EndAndExpand"
                        VerticalOptions="CenterAndExpand"/>
 
             </StackLayout>
