@@ -6,7 +6,7 @@
              Title="RM計算">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
-                     Spacing="70">
+                     Spacing="50">
 
             <StackLayout.Margin>
 
@@ -39,7 +39,7 @@
 
 
             <StackLayout Orientation="Horizontal"
-                         >
+                         Margin="20">
                 <Label Text="重量(kg)" 
                        FontSize="Default"
                        VerticalOptions="CenterAndExpand"
@@ -60,12 +60,12 @@
 
                 <Label Text="Raps(回数)"
                        FontSize="Default"
-                       VerticalOptions="CenterAndExpand"
-                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="EndAndExpand"
+                       HorizontalOptions="EndAndExpand"
                        
                        />
 
-                <Picker x:Name="count" Title="数字を選択してください" WidthRequest="250" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" >
+                <Picker x:Name="count" Title="数字を選択してください" WidthRequest="250" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" >
                     <Picker.Items>
                         <x:String>1</x:String>
                         <x:String>2</x:String>
@@ -109,7 +109,7 @@
                        TextColor="OrangeRed"
                        VerticalOptions="Center"
                        HorizontalOptions="Center"
-                       FontSize="Large"/>
+                       FontSize="30"/>
 
 
                 <Label Text="kgです"
