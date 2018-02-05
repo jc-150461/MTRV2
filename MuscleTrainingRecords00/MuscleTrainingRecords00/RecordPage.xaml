@@ -11,7 +11,7 @@
     
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
-                 Spacing="50">
+                 Spacing="20">
 
             <!--= <StackLayout Orientation="Horizontal">
             
@@ -33,7 +33,7 @@
                      WinPhone="0, 0, 0, 0" />
             </StackLayout.Margin>
 
-            <BoxView BackgroundColor="Black"
+            <BoxView BackgroundColor="AliceBlue"
                  HeightRequest="0.5"
                  WidthRequest="300"/>
             
@@ -70,7 +70,7 @@
                    FontSize="Default"/>
             </StackLayout>
 
-            <BoxView BackgroundColor="MidnightBlue"
+            <BoxView BackgroundColor="AliceBlue"
                  HeightRequest="0.5"
                  WidthRequest="300"/>
 
@@ -90,7 +90,7 @@
 
             </StackLayout>
 
-            <BoxView BackgroundColor="MidnightBlue"
+            <BoxView BackgroundColor="AliceBlue"
                  HeightRequest="0.5"
                  WidthRequest="300"/>
 

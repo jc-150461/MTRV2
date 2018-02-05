@@ -6,7 +6,7 @@
              Title="RM計算">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
-                     Spacing="50">
+                     Spacing="25">
 
             <StackLayout.Margin>
 
