@@ -25,8 +25,20 @@ namespace MuscleTrainingRecords00
                 Double k = 0.0;
                 String s = (String)count.SelectedItem;
                 Double dCount = Double.Parse(s);
-                
-            
+
+                if (dCount == null)
+                {
+                    DisplayAlert("", "回数を選択してください。", "OK");
+                    //RM.Text = "入力してください。";
+                }
+
+                else if (w == null)
+                {
+                    DisplayAlert("", "重量を入力してください。", "OK");
+                    //Weight.Text = "入力してください。";
+                }
+
+
 
                 else if (dCount == 1)
                 {
