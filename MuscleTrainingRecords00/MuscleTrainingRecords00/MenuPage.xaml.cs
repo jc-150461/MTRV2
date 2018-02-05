@@ -40,7 +40,7 @@ namespace MuscleTrainingRecords00
             Training pushup = new Training() { Menu = "アブドミナルマシンクランチ（マシン）", Load = "負荷度:☆☆", parts = "腹", Desc = "両脚は肩幅程度に開き、マシンのステップに足を乗せます。おへそを覗き込むように上体を丸めていく。（１０回ギリギリできるくらいのウェイトにセットして行いましょう", image = "MuscleTrainingRecords00.image.abukura.png" };
             await itemDataBase.InsertItemAsync(pushup);
 
-            await itemDataBase.InsertItemAsync(new Training() { Menu = "ウェィテッドクランチ（プレート）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹", Desc = "プレートを頭の後ろに抱え、膝を曲げ首から上がベンチから出るように仰向けに寝ます。腹筋を意識しながら状態を丸めます。腹筋の緊張を解かないままゆっくり上体がつくまでおろす", image = "MuscleTrainingRecords00.image.weighted-crunch.jpg" });
+            await itemDataBase.InsertItemAsync(new Training() { Menu = "ウェイテッドクランチ（プレート）　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹", Desc = "プレートを頭の後ろに抱え、膝を曲げ首から上がベンチから出るように仰向けに寝ます。腹筋を意識しながら状態を丸めます。腹筋の緊張を解かないままゆっくり上体がつくまでおろす", image = "MuscleTrainingRecords00.image.weighted-crunch.jpg" });
             await itemDataBase.InsertItemAsync(new Training() { Menu = "サイドクランチ　　　　　　　　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹", Desc = "腰を起点に下半身を横に倒す。この体勢のまま、お腹を覗き込むようにして上背部を浮かす。片側が終わったら、倒す向きを逆にして同様に行う。", image = "MuscleTrainingRecords00.image.sidecl.jpg" });
             await itemDataBase.InsertItemAsync(new Training() { Menu = "サイドバイク（ダンベル）　　　　　　　　　　　　　　　", Load = "負荷度:☆", parts = "腹", Desc = "ダンベルを片手に持ち、反対の手を頭の横に沿え・ダンベルの方向に体を預けて構える。ダンベルと反対側に体を傾けてもとに戻す", image = "MuscleTrainingRecords00.image.sidebike.jpg" });
             await itemDataBase.InsertItemAsync(new Training() { Menu = "ダンベルクランチ（ダンベル）　　　　　　　　　　　　　", Load = "負荷度:☆☆", parts = "腹", Desc = "膝を９０度に曲げダンベルを頭の後ろあたりに置き、ダンベルを両手で掴み頭と一緒に持ち上げる", image = "MuscleTrainingRecords00.image.danbel cl.jpg" });
