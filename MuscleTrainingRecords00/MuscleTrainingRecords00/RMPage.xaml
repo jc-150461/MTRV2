@@ -39,10 +39,13 @@
                          >
                 <Label Text="重量(kg)" 
                        FontSize="Default"
-                       VerticalOptions="StartAndExpand"/>
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="StartAndExpand"/>
+                
+               
                 <Entry x:Name="Weight"
                        Placeholder="重量を入力してください"
-                       HorizontalOptions="EndAndExpand"
+                       HorizontalOptions="StartAndExpand"
                        VerticalOptions="StartAndExpand"
                        WidthRequest="250"
                        />
@@ -54,10 +57,11 @@
                 <Label Text="Raps(回数)"
                        FontSize="Default"
                        VerticalOptions="StartAndExpand"
+                       HorizontalOptions="StartAndExpand"
                        
                        />
 
-                <Picker x:Name="count" Title="数字を選択してください" WidthRequest="250" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand" >
+                <Picker x:Name="count" Title="数字を選択してください" WidthRequest="250" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" >
                     <Picker.Items>
                         <x:String>1</x:String>
                         <x:String>2</x:String>
@@ -90,7 +94,7 @@
 
                 <Label Text="あなたの1RMは"
                        FontSize="Default"
-                       VerticalOptions="StartAndExpand"
+                       VerticalOptions="CenterAndExpand"
                        HorizontalOptions="CenterAndExpand"/>
             </StackLayout>
 
@@ -99,7 +103,7 @@
                 <Label x:Name="RM"
                        Text=" "
                        TextColor="OrangeRed"
-                       VerticalOptions="Start"
+                       VerticalOptions="Center"
                        HorizontalOptions="Center"
                        FontSize="Large"/>
 
@@ -107,8 +111,8 @@
                 <Label Text="kgです"
                        FontSize="Default"
                        
-                       HorizontalOptions="End"
-                       VerticalOptions="Start"/>
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"/>
 
             </StackLayout>
 
