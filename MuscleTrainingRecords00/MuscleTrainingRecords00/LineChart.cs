@@ -32,9 +32,9 @@ namespace MuscleTrainingRecords00
 
                 MarkerType = MarkerType.Circle,
 
-                MarkerStroke = OxyColors.Blue,
+                MarkerStroke = OxyColors.Red,
 
-                MarkerFill = OxyColors.SkyBlue,
+                MarkerFill = OxyColors.HotPink,
 
                 DataFieldX = DateTime.Now.ToString(),
                 // DataFieldX = "Date",
@@ -70,9 +70,9 @@ namespace MuscleTrainingRecords00
 
                 MarkerType = MarkerType.Circle,
 
-                MarkerStroke = OxyColors.GreenYellow,
+                MarkerStroke = OxyColors.LightGreen,
 
-                MarkerFill = OxyColors.SkyBlue,
+                MarkerFill = OxyColors.MediumBlue,
 
                 DataFieldX = DateTime.Now.ToString(),
 

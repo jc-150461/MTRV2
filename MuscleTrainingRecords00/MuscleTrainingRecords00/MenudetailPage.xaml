@@ -41,8 +41,8 @@
                 <Image x:Name="image"
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="StartAndExpand"
-                       WidthRequest="400"
-                       HeightRequest="340"
+                       WidthRequest="450"
+                       HeightRequest="300"
                        Aspect="Fill"/>
 
 
